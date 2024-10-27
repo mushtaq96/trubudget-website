@@ -13,6 +13,7 @@ const MobileMenu = () => {
             <button
                 className="text-black focus:outline-none block lg:hidden"
                 onClick={toggleMenu}
+                aria-expanded={isOpen}
             >
                 <svg
                     className="w-6 h-6"
