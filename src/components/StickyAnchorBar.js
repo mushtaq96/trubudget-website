@@ -1,3 +1,4 @@
+// src/components/StickyAnchorBar.js
 import React from 'react';
 import ToTop from '../../static/img/Back-to-top-btn.png';
 
