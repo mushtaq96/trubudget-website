@@ -15,6 +15,34 @@ module.exports = {
   themeConfig: {
     navbar: {
       hideOnScroll: true, // Hide the default navbar on scroll
+      logo: {
+        alt: "TruBudget Logo",
+        src: "img/orgas/Logo.png",
+        width: 141,
+        height: 28,
+      },
+      items: [
+        {
+          to: "https://trubudget.net/docs/",
+          label: "Documentation",
+          position: "left",
+        },
+        {
+          href: "https://github.com/openkfw/TruBudget/discussions",
+          label: "Community",
+          position: "left",
+        },
+        {
+          href: "https://github.com/openkfw/TruBudget",
+          label: "GitHub",
+          position: "right",
+        },
+        {
+          href: "https://taas.trubudget.net",
+          label: "Demo",
+          position: "right",
+        },
+      ],
     },
     colorMode: {
       disableSwitch: true, // Disable the dark mode toggle button

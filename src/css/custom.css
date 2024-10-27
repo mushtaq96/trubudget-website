@@ -1,20 +1,36 @@
-/* add tailwind configurations */
+/* src/css/custom.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* src/css/custom.css */
 .navbar {
-  top: 24px;
   background: #F0F0F04D;
   backdrop-filter: blur(88px);
   box-shadow: 0px 4px 8px 0px #00000014;
   border-radius: 8px;
-  opacity: 50;
-  /* border-color: rgb(16, 16, 151); */
-}
-
-.navbar a {
   padding: 8px 16px;
   gap: 16px;
+  position: fixed;
+  top: 24px;
+  left: 80px;
+  width: 1200px;
+  height: 58px;
+}
+
+.navbar__brand {
+  height: 40px;
+  margin-right: 1rem;
+}
+
+.navbar__link {
+  padding: 8px 16px;
+  gap: 16px;
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar__link:hover {
+  background-color: #2563eb;
 }
