@@ -10,7 +10,9 @@ module.exports = {
   onBrokenMarkdownLinks: "ignore",
   organizationName: "openkfw",
   projectName: "trubudget-website",
-  plugins: [require.resolve("docusaurus-lunr-search")],
+  plugins: [require.resolve("docusaurus-lunr-search"),
+    'docusaurus-tailwindcss'
+  ],
   themeConfig: {
     navbar: {
       title: "TruBudget",

@@ -3,16 +3,7 @@ import React, { useEffect } from 'react';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import ServicesSection from './components/ServicesSection';
-import PortfolioSection from './components/PortfolioSection';
-import BenefitsSection from './components/BenefitsSection';
-import VideoSection from './components/VideoSection';
-import PilotProjectsSection from './components/PilotProjectsSection';
-import CommunitySection from './components/CommunitySection';
-import ContactSection from './components/ContactSection';
-import ImpressumSection from './components/ImpressumSection';
+import AboutSection from '../components/AboutSection';
 
 const Home = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -34,18 +25,19 @@ const Home = () => {
         {/* Add necessary meta tags and stylesheets */}
       </Head>
 
-      <main className="container">
-        <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <PortfolioSection />
-        <BenefitsSection />
-        <VideoSection />
-        <PilotProjectsSection />
-        <CommunitySection />
-        <ContactSection />
-        <ImpressumSection />
+      <main className="container bg-gray-100 p-4">
+        <h1 className="text-3xl font-bold mb-4">Tailwind Test</h1>
+        <p className="text-lg text-blue-500">This is a test paragraph.</p>
+        <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          Click me!
+        </button>
       </main>
+
+
+      {/* <main className="container">
+        <AboutSection />
+
+      </main> */}
     </Layout>
   );
 };
