@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 export default function CustomLayout(props) {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Layout {...props} />
         </>
     );
