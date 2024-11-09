@@ -16,3 +16,78 @@
   width: 1200px;
   height: 58px;
 }
+
+.custom-triangle-mask {
+  clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+}
+
+.leftScreenshot img {
+  position: absolute !important;
+  width: 507.02px !important;
+  height: 313.61px !important;
+  left: -157.14px !important;
+  top: 432px !important;
+  
+  filter: drop-shadow(0px 9.61695px 57.7017px rgba(0, 0, 0, 0.25))
+          drop-shadow(0px 9.61695px 76.9356px rgba(0, 0, 0, 0.15)) !important;
+  
+  border-radius: 0px 0px 9.8004px 9.8004px !important;
+}
+
+.leftScreenshot img::before {
+  content: '';
+  display: block;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.rightScreenshot img {
+  position: absolute !important;
+  width: 506.03px !important;
+  height: 313px !important;
+  left: 975px !important;
+  top: 63px !important;
+  
+  filter: drop-shadow(0px 7.52529px 57.8147px rgba(0, 0, 0, 0.25))
+         drop-shadow(0px 7.52529px 77.0863px rgba(0, 0, 0, 0.15)) !important;
+  
+  border-radius: 6.24779px !important;
+}
+
+.rightScreenshot img::before {
+  content: '';
+  display: block;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+
+.primarySchool {
+  position: absolute !important;
+  width: 226.9px !important;
+  height: 274.72px !important;
+  left: 36px !important;
+  top: 101.15px !important;
+  filter: drop-shadow(0px 4.4512px 24px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.15)) !important;
+  border-radius: 8.90239px !important;
+  object-fit: cover;
+}
+
+.taskStatus {
+  position: absolute !important;
+  width: 203.9px !important;
+  height: 246.87px !important;
+  left: 479px !important;
+  top: 530px !important;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.15)) !important;
+  border-radius: 8px !important;
+  object-fit: cover;
+}
+
+.budgetDistribution {
+  position: absolute !important;
+  width: 203.12px !important;
+  height: 248.43px !important;
+  left: 712px !important;
+  top: 589px !important;
+  filter: drop-shadow(0px 4px 23px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.15)) !important;
+  border-radius: 8px !important;
+  object-fit: cover;
+}
