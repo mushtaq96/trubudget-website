@@ -10,16 +10,16 @@ const Navbar = () => {
                 <img src={Logo} alt="TruBudget Logo" className="h-10" />
                 {/* Navigation links visible only on lg and above */}
                 <div className="hidden lg:flex space-x-4">
-                    <a href="/docs/README" className="text-black px-4 py-2 rounded hover:bg-white hover:text-black">Documentation</a>
-                    <a href="https://github.com/openkfw/TruBudget/discussions" className="text-black px-4 py-2 rounded hover:bg-white hover:text-black">Community</a>
+                    <a href="/docs/README" className="text-black px-4 py-2 rounded hover:bg-white hover:text-black hover:no-underline">Documentation</a>
+                    <a href="https://github.com/openkfw/TruBudget/discussions" className="text-black px-4 py-2 rounded hover:bg-white hover:text-black hover:no-underline">Community</a>
                 </div>
             </div>
             <div className="flex items-center space-x-4">
                 {/* Navigation links visible only on lg and above */}
                 <div className="hidden lg:flex space-x-4">
 
-                    <a href="https://github.com/openkfw/TruBudget" className="border border-black text-black px-4 py-2 rounded-3xl hover:bg-blue-600 hover:text-white">GitHub</a>
-                    <a href="https://taas.trubudget.net" className="border border-black text-black px-4 py-2 rounded-3xl hover:bg-blue-600 hover:text-white">Demo</a>
+                    <a href="https://github.com/openkfw/TruBudget" className="border border-black text-black px-4 py-2 rounded-3xl hover:bg-blue-600 hover:text-white hover:no-underline">GitHub</a>
+                    <a href="https://taas.trubudget.net" className="border border-black text-black px-4 py-2 rounded-3xl hover:bg-blue-600 hover:text-white hover:no-underline">Demo</a>
                 </div>
                 {/* Hamburger menu for sm and md screen view */}
                 <MobileMenu className="lg:hidden" />
