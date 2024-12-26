@@ -22,7 +22,6 @@
     "@svgr/webpack": "^8.0.1",
     "clsx": "^1.1.1",
     "docusaurus-lunr-search": "^2.1.15",
-    "docusaurus-tailwindcss": "^0.1.0",
     "dotenv": "^16.0.0",
     "file-loader": "^6.2.0",
     "lucide-react": "^0.454.0",
