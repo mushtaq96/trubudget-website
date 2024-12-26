@@ -29,7 +29,7 @@ const MobileMenu = () => {
                 )}
             </button>
             {isOpen && (
-                <div className="mobile-menu-content xs-only">
+                <div className="mobile-menu-content">
                     <div className="menu-grid">
                         <div className="menu-column">
                             <h3>Internal</h3>

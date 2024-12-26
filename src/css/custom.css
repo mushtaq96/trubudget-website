@@ -70,7 +70,7 @@
   stroke: #000; /* Ensure the icon is visible */
 }
 
-/* Mobile Menu Styles */
+/* Menu Styles */
 .mobile-menu-content {
   display: block; /* Ensure the menu is hidden by default */
   position: absolute;
@@ -123,6 +123,60 @@
 
 .menu-column a:hover {
   background: rgba(0, 0, 0, 0.05);
+}
+
+
+@media (min-width: 768px) {
+  .mobile-menu-content {
+    display: block;
+    padding: 8px 16px 32px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(44px);
+    border-radius: 8px;
+  }
+  .menu-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px; 
+  }
+  .menu-column {
+    flex: 1; /* Each column takes equal space */
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Space between subcategories */
+    padding: 0 16px; /* Add padding between columns */
+  }
+  .menu-column h3 {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #3F434D;
+    margin-bottom: 8px;
+  }
+
+  .menu-column a {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      color: #111826;
+      text-decoration: none;
+      padding: 12px 16px;
+      border-radius: 8px;
+      backdrop-filter: blur(16px);
+  }
+
+  .menu-column a:hover {
+      background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-menu-content {
+    display: block; /* Hide the menu on even larger screens */
+  }
 }
 
 .custom-triangle-mask {
