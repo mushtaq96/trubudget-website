@@ -1,0 +1,273 @@
+/* src/css/custom.css */
+.main-menu_landingpage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 16px;
+    gap: 16px;
+    
+    position: absolute;
+    height: 58px;
+    left: 16px;
+    top: 16px;
+    right: 16px;
+  
+    background: rgba(240, 240, 240, 0.3);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(44px);
+    border-radius: 8px;
+  }
+  
+  .top-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 0px;
+    gap: 8px;
+    height: 42px;
+    width: 100%;
+  }
+  
+  .logo-and-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    width: 100%; /* Ensure the logo and button take up the full width */
+    height: 42px;
+  }
+  
+  .hamburger-menu-container {
+    z-index: 50; 
+  }
+  
+  /* Hamburger Menu for Small and Medium Devices */
+  .md-only {
+    display: block; /* Show by default */
+  }
+  
+  /* Buttons for Large Devices */
+  .lg-only {
+    display: none; /* Hide by default */
+  }
+  
+  .logo {
+    width: 150px;
+    height: 30px;
+  }
+  
+  /* Hamburger Button */
+  .navbar__hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+  
+  .navbar__hamburger svg {
+    width: 24px;
+    height: 24px;
+    stroke: #000; /* Ensure the icon is visible */
+  }
+  
+  /* Menu Styles */
+  .hamburger-menu-content {
+    display: block; /* Ensure the menu is hidden by default */
+    position: absolute;
+    top: 100%; /* Position the menu below the navbar */
+    width: 100%; /* same width as navbar */
+    right: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+  }
+  
+  .menu-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .menu-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .menu-column h3 {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #3F434D;
+    margin-bottom: 8px;
+  }
+  
+  .menu-column a {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111826;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    backdrop-filter: blur(16px);
+  }
+  .icon {
+    width: 16px; /* Adjust the size as needed */
+    height: 16px;
+    margin-left: 8px; /* Add some space between the icon and the text */
+    vertical-align: middle; /* Align the icon with the text */
+  }
+  
+  .menu-column a:hover {
+    background: rgba(0, 0, 0, 0.05);
+  }
+  
+  
+  @media (min-width: 768px) {
+    .main-menu_landingpage {
+      padding: 8px 16px; /* Adjust padding for larger screens */
+    }
+    .hamburger-menu-content {
+      display: block;
+      padding: 8px 16px 32px;
+      background: rgba(255, 255, 255, 0.2);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+      backdrop-filter: blur(44px);
+      border-radius: 8px;
+    }
+    .menu-grid{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 32px; 
+    }
+    .menu-column {
+      flex: 1; /* Each column takes equal space */
+      display: flex;
+      flex-direction: column;
+      gap: 8px; /* Space between subcategories */
+      padding: 0 16px; /* Add padding between columns */
+    }
+    .menu-column h3 {
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #3F434D;
+      margin-bottom: 8px;
+    }
+  
+    .menu-column a {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        color: #111826;
+        text-decoration: none;
+        padding: 12px 16px;
+        border-radius: 8px;
+        backdrop-filter: blur(16px);
+    }
+  
+    .menu-column a:hover {
+        background: rgba(0, 0, 0, 0.05);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .md-only {
+      display: none; /* Hide hamburger on large devices */
+    }
+    .lg-only {
+        display: flex; /* Show buttons on large devices */
+        gap: 16px; /* Space between buttons */
+    }
+    .main-menu_landingpage {
+      padding: 8px 16px; /* Adjust padding for even larger screens */
+    }
+    .hamburger-menu-content {
+      display: none; /* Hide the menu on even larger screens */
+    }
+    .logo-and-button {
+      justify-content: flex-start; /* Align items to the start */
+      gap: 40px; /* Add space between logo and buttons */
+    }
+    .left-buttons {
+      display: flex; /* Show on large screens */
+      gap: 16px; /* Space between Documentation and Community buttons */
+    }
+  
+    .navbar-buttons {
+      margin-left: auto; /* Push GitHub and Demo buttons to the end */
+    }
+  }
+  
+  /* Button Styles */
+  .left-butons{
+    display: flex;
+    gap: 16px;
+    margin-right: auto;
+  }
+  .text-button {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    font-family: 'Clash Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #111826;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .text-button a {
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .text-button:hover {
+    background-color: #FFFFFF;
+    transform: scale(1.05);
+    border-radius: 5px;
+    color: #111826; /* Default text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .navbar-button {
+    display: flex;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 6px;
+    border: 1px solid rgba(63, 67, 77, 0.2);
+    backdrop-filter: blur(16px);
+    border-radius: 15px;
+    background: transparent;
+    font-family: 'Clash Grotesk', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .navbar-button a {
+    color: #111826; /* Set text color to black */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  /* Hover effect for the button */
+  .navbar-button:hover {
+    background-color: #1744E5; 
+    border-color: #1744E5; 
+  }
+  /* Hover effect for the link inside the button */
+  .navbar-button:hover a {
+    color: #FFFFFF; /* White text on hover */
+    text-decoration: none; 
+  }
+  
+  .custom-triangle-mask {
+    clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+  }
+  
+  
