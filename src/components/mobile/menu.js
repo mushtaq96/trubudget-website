@@ -39,9 +39,9 @@ const MobileMenu = () => {
                         <div className="menu-column">
                             <h3>External</h3>
                             <a href="https://github.com/openkfw/TruBudget">GitHub
-                                <img src={NewTabIcon} alt="New Tab Icon" /> </a>
+                                <img src={NewTabIcon} alt="New Tab Icon" className='icon' /> </a>
                             <a href="https://taas.trubudget.net">Demo
-                                <img src={DemoIcon} alt="Demo Icon" /> </a>
+                                <img src={DemoIcon} alt="Demo Icon" className='icon' /> </a>
                         </div>
                         <div className="menu-column">
                             <h3>Legal</h3>

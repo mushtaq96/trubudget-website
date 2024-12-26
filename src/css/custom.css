@@ -19,18 +19,6 @@
   border-radius: 8px;
 }
 
-@media (min-width: 768px) {
-  .main-menu_landingpage {
-    padding: 8px 16px; /* Adjust padding for larger screens */
-  }
-}
-
-@media (min-width: 1024px) {
-  .main-menu_landingpage {
-    padding: 8px 16px; /* Adjust padding for even larger screens */
-  }
-}
-
 .top-container{
   display: flex;
   flex-direction: column;
@@ -52,10 +40,21 @@
   height: 42px;
 }
 
+/* Hamburger Menu for Small and Medium Devices */
+.md-only {
+  display: block; /* Show by default */
+}
+
+/* Buttons for Large Devices */
+.lg-only {
+  display: none; /* Hide by default */
+}
+
 .logo {
   width: 141.92px;
   height: 28.56px;
 }
+
 /* Hamburger Button */
 .navbar__hamburger {
   background: none;
@@ -114,7 +113,7 @@
   border-radius: 8px;
   backdrop-filter: blur(16px);
 }
-.menu-column a img {
+.icon {
   width: 16px; /* Adjust the size as needed */
   height: 16px;
   margin-left: 8px; /* Add some space between the icon and the text */
@@ -127,6 +126,9 @@
 
 
 @media (min-width: 768px) {
+  .main-menu_landingpage {
+    padding: 8px 16px; /* Adjust padding for larger screens */
+  }
   .mobile-menu-content {
     display: block;
     padding: 8px 16px 32px;
@@ -174,9 +176,91 @@
 }
 
 @media (min-width: 1024px) {
-  .mobile-menu-content {
-    display: block; /* Hide the menu on even larger screens */
+  .md-only {
+    display: none; /* Hide hamburger on large devices */
   }
+  .lg-only {
+      display: flex; /* Show buttons on large devices */
+      gap: 16px; /* Space between buttons */
+  }
+  .main-menu_landingpage {
+    padding: 8px 16px; /* Adjust padding for even larger screens */
+  }
+  .mobile-menu-content {
+    display: none; /* Hide the menu on even larger screens */
+  }
+  .logo-and-button {
+    justify-content: flex-start; /* Align items to the start */
+    gap: 40px; /* Add space between logo and buttons */
+  }
+  .left-buttons {
+    display: flex; /* Show on large screens */
+    gap: 16px; /* Space between Documentation and Community buttons */
+  }
+
+  .navbar-buttons {
+    margin-left: auto; /* Push GitHub and Demo buttons to the end */
+  }
+}
+
+/* Button Styles */
+.left-butons{
+  display: flex;
+  gap: 16px;
+  margin-right: auto;
+}
+.text-button {
+  background: none;
+  border: none;
+  padding: 8px 16px;
+  font-family: 'Clash Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111826;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.text-button a {
+  text-decoration: none; /* Remove underline */
+}
+
+.text-button:hover {
+  background-color: #FFFFFF;
+  transform: scale(1.05);
+  border-radius: 5px;
+  color: #111826; /* Default text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.navbar-button {
+  display: flex;
+  align-items: center;
+  padding: 8px 24px;
+  gap: 6px;
+  border: 1px solid rgba(63, 67, 77, 0.2);
+  backdrop-filter: blur(16px);
+  border-radius: 15px;
+  background: transparent;
+  font-family: 'Clash Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navbar-button a {
+  color: #111826; /* Set text color to black */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Hover effect for the button */
+.navbar-button:hover {
+  background-color: #1744E5; 
+  border-color: #1744E5; 
+}
+/* Hover effect for the link inside the button */
+.navbar-button:hover a {
+  color: #FFFFFF; /* White text on hover */
+  text-decoration: none; 
 }
 
 .custom-triangle-mask {
