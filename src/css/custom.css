@@ -1,5 +1,4 @@
 /* src/css/custom.css */
-
 .main-menu_landingpage {
   display: flex;
   flex-direction: column;
@@ -51,8 +50,8 @@
 }
 
 .logo {
-  width: 141.92px;
-  height: 28.56px;
+  width: 150px;
+  height: 30px;
 }
 
 /* Hamburger Button */
@@ -77,7 +76,7 @@
   width: 100%; /* same width as navbar */
   right: 0;
   background: white;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 16px;
 }
