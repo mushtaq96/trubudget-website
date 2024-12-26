@@ -1,93 +1,124 @@
 /* src/css/custom.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
-.navbar {
-  background: #F0F0F04D;
-  backdrop-filter: blur(88px);
-  box-shadow: 0px 4px 8px 0px #00000014;
-  border-radius: 8px;
+.main-menu_landingpage {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 8px 16px;
   gap: 16px;
-  position: fixed;
-  top: 24px;
-  left: 80px;
-  width: 1200px;
+  
+  position: absolute;
   height: 58px;
+  left: 16px;
+  top: 16px;
+  right: 16px;
+
+  background: rgba(240, 240, 240, 0.3);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(44px);
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .main-menu_landingpage {
+    padding: 8px 16px; /* Adjust padding for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-menu_landingpage {
+    padding: 8px 16px; /* Adjust padding for even larger screens */
+  }
+}
+
+.top-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  padding: 0px;
+  gap: 8px;
+  height: 42px;
+  width: 100%;
+}
+
+.logo-and-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  width: 100%; /* Ensure the logo and button take up the full width */
+  height: 42px;
+}
+
+.logo {
+  width: 141.92px;
+  height: 28.56px;
+}
+/* Hamburger Button */
+.navbar__hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.navbar__hamburger svg {
+  width: 24px;
+  height: 24px;
+  stroke: #000; /* Ensure the icon is visible */
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-content {
+  display: block; /* Ensure the menu is hidden by default */
+  position: absolute;
+  top: 100%; /* Position the menu below the navbar */
+  width: 100%; /* same width as navbar */
+  right: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-column h3 {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #3F434D;
+  margin-bottom: 8px;
+}
+
+.menu-column a {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111826;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 8px;
+  backdrop-filter: blur(16px);
+}
+
+.menu-column a:hover {
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .custom-triangle-mask {
   clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
-}
-
-.leftScreenshot img {
-  position: absolute !important;
-  width: 507.02px !important;
-  height: 313.61px !important;
-  left: -157.14px !important;
-  top: 432px !important;
-  
-  filter: drop-shadow(0px 9.61695px 57.7017px rgba(0, 0, 0, 0.25))
-          drop-shadow(0px 9.61695px 76.9356px rgba(0, 0, 0, 0.15)) !important;
-  
-  border-radius: 0px 0px 9.8004px 9.8004px !important;
-}
-
-.leftScreenshot img::before {
-  content: '';
-  display: block;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-}
-
-.rightScreenshot img {
-  position: absolute !important;
-  width: 506.03px !important;
-  height: 313px !important;
-  left: 975px !important;
-  top: 63px !important;
-  
-  filter: drop-shadow(0px 7.52529px 57.8147px rgba(0, 0, 0, 0.25))
-         drop-shadow(0px 7.52529px 77.0863px rgba(0, 0, 0, 0.15)) !important;
-  
-  border-radius: 6.24779px !important;
-}
-
-.rightScreenshot img::before {
-  content: '';
-  display: block;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-}
-
-.primarySchool {
-  position: absolute !important;
-  width: 226.9px !important;
-  height: 274.72px !important;
-  left: 36px !important;
-  top: 101.15px !important;
-  filter: drop-shadow(0px 4.4512px 24px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.15)) !important;
-  border-radius: 8.90239px !important;
-  object-fit: cover;
-}
-
-.taskStatus {
-  position: absolute !important;
-  width: 203.9px !important;
-  height: 246.87px !important;
-  left: 479px !important;
-  top: 530px !important;
-  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.15)) !important;
-  border-radius: 8px !important;
-  object-fit: cover;
-}
-
-.budgetDistribution {
-  position: absolute !important;
-  width: 203.12px !important;
-  height: 248.43px !important;
-  left: 712px !important;
-  top: 589px !important;
-  filter: drop-shadow(0px 4px 23px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.15)) !important;
-  border-radius: 8px !important;
-  object-fit: cover;
 }

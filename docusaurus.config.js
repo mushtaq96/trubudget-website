@@ -9,9 +9,6 @@ module.exports = {
   onBrokenMarkdownLinks: "ignore",
   organizationName: "openkfw",
   projectName: "trubudget-website",
-  plugins: [
-    'docusaurus-tailwindcss'
-  ],
   themeConfig: {
     navbar: {
       hideOnScroll: true, // Hide the default navbar on scroll
@@ -19,43 +16,43 @@ module.exports = {
     colorMode: {
       disableSwitch: true, // Disable the dark mode toggle button
     },
-    footer: {
-      style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/README",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Github Discussions",
-              href: "https://github.com/openkfw/TruBudget/discussions",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "GitHub",
-              href: "https://github.com/openkfw/TruBudget",
-            },
-            {
-              label: "TruBudget as a Service",
-              href: "https://taas.trubudget.net",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} TruBudget`,
-    },
+    // footer: {
+    //   style: "dark",
+    //   links: [
+    //     {
+    //       title: "Docs",
+    //       items: [
+    //         {
+    //           label: "Tutorial",
+    //           to: "/docs/README",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: "Community",
+    //       items: [
+    //         {
+    //           label: "Github Discussions",
+    //           href: "https://github.com/openkfw/TruBudget/discussions",
+    //         },
+    //       ],
+    //     },
+    //     {
+    //       title: "More",
+    //       items: [
+    //         {
+    //           label: "GitHub",
+    //           href: "https://github.com/openkfw/TruBudget",
+    //         },
+    //         {
+    //           label: "TruBudget as a Service",
+    //           href: "https://taas.trubudget.net",
+    //         },
+    //       ],
+    //     },
+    //   ],
+    //   copyright: `Copyright © ${new Date().getFullYear()} TruBudget`,
+    // },
   },
   presets: [
     [

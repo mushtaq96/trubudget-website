@@ -10,14 +10,14 @@ import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
     return (
-        <section className="hero relative w-full min-h-screen mx-auto mt-[114px] overflow-hidden">
-            <div className="hero-mask-layer bg-black bg-opacity-50">
-                <img src={Background} alt="Background" className="absolute inset-0 w-full h-full object-cover custom-triangle-mask" />
+        <section className="">
+            <div className="">
+                <img src={Background} alt="Background" className="" />
 
             </div>
 
             <div className='leftScreenshot'>
-                <img src={LeftScreenshot} alt="Feature 1" className="absolute top-1/3 right-1/4 w-40 h-40 object-cover rounded-lg shadow-lg" />
+                <img src={LeftScreenshot} alt="Feature 1" className="" />
             </div>
 
             <div className='primarySchool'>
@@ -33,22 +33,22 @@ const Hero = () => {
             </div>
 
             <div className='rightScreenshot'>
-                <img src={RightScreenshot} alt="Feature 2" className="absolute top-1/3 right-1/4 w-40 h-40 object-cover rounded-lg shadow-lg" />
+                <img src={RightScreenshot} alt="Feature 2" className="" />
             </div>
 
-            <div className="hero-text z-10 mx-auto w-[558px] h-[352px]">
-                <div className="hero-text flex flex-col items-center justify-center gap-6 text-center max-w-full">
-                    <h1 className="text-5xl font-bold mb-4">
+            <div className="">
+                <div className="hero">
+                    <h1 className="">
                         <span>Financing &amp;</span>
                         <br />
                         <span>managing made</span>
                         <br />
                         <span>smarter</span>
                     </h1>
-                    <p className="max-w-md text-xl mb-8">
+                    <p className="mb-8">
                         Explore our app with spend limits, tracking, approval flows, and much more - boasting a huge success rate.
                     </p>
-                    <button className="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600 transition duration-300">
+                    <button className="duration-300">
                         Tell me more
                     </button>
                 </div>
