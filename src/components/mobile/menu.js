@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import DemoIcon from '../../../static/img/navbar/DemoIcon.png';
+import NewTabIcon from '../../../static/img/navbar/NewTabIcon.png';
 
 const MobileMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,8 +38,10 @@ const MobileMenu = () => {
                         </div>
                         <div className="menu-column">
                             <h3>External</h3>
-                            <a href="https://github.com/openkfw/TruBudget">GitHub</a>
-                            <a href="https://taas.trubudget.net">Demo</a>
+                            <a href="https://github.com/openkfw/TruBudget">GitHub
+                                <img src={NewTabIcon} alt="New Tab Icon" /> </a>
+                            <a href="https://taas.trubudget.net">Demo
+                                <img src={DemoIcon} alt="Demo Icon" /> </a>
                         </div>
                         <div className="menu-column">
                             <h3>Legal</h3>
