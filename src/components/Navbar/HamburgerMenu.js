@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DemoIcon from '../../../static/img/navbar/DemoIcon.png';
 import NewTabIcon from '../../../static/img/navbar/NewTabIcon.png';
 
-const MobileMenu = () => {
+const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -10,7 +10,7 @@ const MobileMenu = () => {
     };
 
     return (
-        <div className="relative z-50">
+        <div className="hamburger-menu-container">
             <button
                 onClick={toggleMenu}
                 aria-expanded={isOpen}
@@ -29,7 +29,7 @@ const MobileMenu = () => {
                 )}
             </button>
             {isOpen && (
-                <div className="mobile-menu-content">
+                <div className="hamburger-menu-content">
                     <div className="menu-grid">
                         <div className="menu-column">
                             <h3>Internal</h3>
@@ -56,4 +56,4 @@ const MobileMenu = () => {
     );
 };
 
-export default MobileMenu;
+export default HamburgerMenu;

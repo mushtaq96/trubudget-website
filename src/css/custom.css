@@ -39,6 +39,10 @@
   height: 42px;
 }
 
+.hamburger-menu-container {
+  z-index: 50; 
+}
+
 /* Hamburger Menu for Small and Medium Devices */
 .md-only {
   display: block; /* Show by default */
@@ -69,7 +73,7 @@
 }
 
 /* Menu Styles */
-.mobile-menu-content {
+.hamburger-menu-content {
   display: block; /* Ensure the menu is hidden by default */
   position: absolute;
   top: 100%; /* Position the menu below the navbar */
@@ -128,7 +132,7 @@
   .main-menu_landingpage {
     padding: 8px 16px; /* Adjust padding for larger screens */
   }
-  .mobile-menu-content {
+  .hamburger-menu-content {
     display: block;
     padding: 8px 16px 32px;
     background: rgba(255, 255, 255, 0.2);
@@ -185,7 +189,7 @@
   .main-menu_landingpage {
     padding: 8px 16px; /* Adjust padding for even larger screens */
   }
-  .mobile-menu-content {
+  .hamburger-menu-content {
     display: none; /* Hide the menu on even larger screens */
   }
   .logo-and-button {
@@ -265,3 +269,4 @@
 .custom-triangle-mask {
   clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
 }
+

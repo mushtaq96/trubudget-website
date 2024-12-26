@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo from '../../static/img/orgas/Logo.png';
-import MobileMenu from '../components/mobile/menu';
-import DemoIcon from '../../static/img/navbar/DemoIcon.png';
-import NewTabIcon from '../../static/img/navbar/NewTabIcon.png';
+import Logo from '../../../static/img/orgas/Logo.png';
+import HamburgerMenu from './HamburgerMenu';
+import DemoIcon from '../../../static/img/navbar/DemoIcon.png';
+import NewTabIcon from '../../../static/img/navbar/NewTabIcon.png';
 
 const Navbar = () => {
     return (
@@ -15,9 +15,9 @@ const Navbar = () => {
                         <a href="/docs/README" className="text-button">Documentation</a>
                         <a href="https://github.com/openkfw/TruBudget/discussions" className="text-button">Community</a>
                     </div>
-                    {/* Mobile Menu (Hidden on Large Screens) */}
+                    {/* HamburgerMenu (Hidden on Large Screens) */}
                     <div className="md-only">
-                        <MobileMenu />
+                        <HamburgerMenu />
                     </div>
                     {/* Buttons for Large Devices */}
                     <div className="navbar-buttons lg-only">
