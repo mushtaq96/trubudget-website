@@ -15,7 +15,7 @@ const Hero = () => {
     return (
         <section className="hero-section">
 
-            <img src={Background} alt="Background" className="hero-background" />
+            <img src={Background} alt="Blurred Gradient Background" className="hero-background" />
 
             <div className='hero-container'>
                 <img src={PrimarySchool} alt="Primary School" className="hero-image primarySchool" />
