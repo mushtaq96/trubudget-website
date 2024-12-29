@@ -122,6 +122,7 @@
     margin-left: 8px; /* Add some space between the icon and the text */
     vertical-align: middle; /* Align the icon with the text */
   }
+
   
   .menu-column a:hover {
     background: rgba(0, 0, 0, 0.05);
@@ -264,6 +265,9 @@
   .navbar-button:hover a {
     color: #FFFFFF; /* White text on hover */
     text-decoration: none; 
+  }
+  .navbar-button:hover .icon{
+    filter: brightness(0) invert(1); /* Converts the icon to white */
   }
   
   .custom-triangle-mask {
