@@ -13,7 +13,7 @@ const Home = () => {
     <Layout>
       <Hero />
       <CustomNavbar />
-      {/* <StickyAnchorBar /> */}
+      <StickyAnchorBar />
     </Layout>
   );
 };

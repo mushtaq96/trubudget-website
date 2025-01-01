@@ -239,7 +239,6 @@
         left: 10%;
         width: 80%;
         height: 80%;
-        
     }
     .hero-content-container {
         top: 4em;
@@ -286,8 +285,4 @@
         left: 80%;
         height: auto;    
     }
-}
-
-* {
-    outline: 1px solid red;
 }

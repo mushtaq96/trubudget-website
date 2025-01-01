@@ -1,0 +1,41 @@
+.anchormenu {
+    position: fixed;
+    bottom: 20%;
+    left: 20%;
+    height: auto;
+    width: 60%; 
+    background-color: rgba(255, 243, 243, 0.8); /* transparent white */
+    color: black;
+    border-radius: 0.5rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .anchor-link {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .anchor-link:hover {
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .back-to-top {
+    margin-left: 0.5em;
+  }
+  
+  .to-top-image {
+    width: 3rem;
+    height: auto;
+  }
+  
+  
