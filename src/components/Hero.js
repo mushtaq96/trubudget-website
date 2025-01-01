@@ -6,7 +6,6 @@ import PrimarySchool from '../../static/img/hero-section/PrimarySchool.png';
 import TaskStatus from '../../static/img/hero-section/TaskStatus.png';
 import BudgetDistribution from '../../static/img/hero-section/BudgetDistribution.png';
 import TopBar from '../components/common/TopBar';
-import { ChevronDown } from 'lucide-react';
 import CustomNavbar from '../theme/Navbar';
 import ArrowDownward from '../../static/img/hero-section/ArrowDownward.png';
 import PrimarySchoolStatus from '../../static/img/hero-section/PrimarySchoolStatus.png';
