@@ -174,6 +174,10 @@
     width: 120px;
 }
 
+.custom-triangle-mask {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+}
+
 @media (min-width: 768px){
     .main-menu_landingpage {
         max-width: 100%; /* Ensure the navbar doesn’t overflow */
@@ -227,6 +231,9 @@
 }
 
 @media (min-width: 1024px){
+    .custom-triangle-mask {
+        clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+    }
     .hero-container {
         margin-top: 8em;
         left: 10%;
@@ -239,9 +246,6 @@
         height: auto;
         width: 50%;
         left: 18%; 
-        /* display: flex;
-        flex-direction: column;
-        align-items: stretch; */
     }
     .hero-title{
         max-width: none;
@@ -249,7 +253,6 @@
     .hero-description{
         max-width: 100%;
     }
-
     .primarySchool{
         top: 4em;
         left: auto;
@@ -283,10 +286,8 @@
         left: 80%;
         height: auto;    
     }
-
-
-
 }
+
 * {
     outline: 1px solid red;
 }

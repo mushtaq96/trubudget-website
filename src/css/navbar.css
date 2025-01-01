@@ -273,8 +273,5 @@
     filter: brightness(0) invert(1); /* Converts the icon to white */
   }
   
-  .custom-triangle-mask {
-    clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
-  }
-  
+
   

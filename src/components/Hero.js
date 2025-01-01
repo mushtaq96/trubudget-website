@@ -15,7 +15,7 @@ const Hero = () => {
     return (
         <section className="hero-section">
 
-            <img src={Background} alt="Blurred Gradient Background" className="hero-background" />
+            <img src={Background} alt="Blurred Gradient Background" className="hero-background custom-triangle-mask" />
 
             <div className='hero-container'>
                 <img src={PrimarySchool} alt="Primary School" className="hero-image primarySchool" />
