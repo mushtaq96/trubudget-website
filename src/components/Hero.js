@@ -43,7 +43,7 @@ const Hero = () => {
                     <TopBar />
                     <img src={Notifications} alt="Notifications" className="hero-image notifications" />
                 </div>
-
+                <img src={TaskStatus} alt="Task Status" className="hero-image taskStatus" />
                 <img src={PrimarySchoolStatus} alt="Primary School Status" className="hero-image primarySchoolStatus" />
                 <img src={BudgetDistribution} alt="Budget Distribution" className="hero-image budgetDistribution" />
             </div>
