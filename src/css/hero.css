@@ -33,17 +33,17 @@
 
 .workflow-container {
     position: absolute;
-    left: 180px;
+    right: -30px;
     top: 0;
-    width: 100%;
-    height: 150px;
+    max-width: 90%;
+    height: 135px;
     overflow: hidden;
 }
 
 .topbar-container {
     display: flex;
     height: 8px;
-    width: 70%;
+    width: 100%;
     background-color: #787D8A;
     border-radius: 2px 2px 0px 0px;
 }
@@ -72,7 +72,7 @@
 }
 
 .workflow {
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
@@ -146,20 +146,20 @@
     position: absolute;
     left: -80px;
     top: 35em;
-    width: 100%;
+    width: 250px;
     height: 150px;
     overflow: hidden;
 }
 
 .notifications {
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
 .primarySchoolStatus {
     position: absolute;
     top: 33em;
-    left: 340px;
+    right: -20px;
     width: 100px;
 }
 
@@ -168,4 +168,49 @@
     top: 37em;
     left: 280px;
     width: 120px;
+}
+
+@media (min-width: 768px){
+    .main-menu_landingpage {
+        max-width: 100%; /* Ensure the navbar doesn’t overflow */
+        padding: 8px 16px; /* Adjust padding if needed */
+    }
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+    
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-container {
+        margin-top: 6rem;
+    }
+    .primarySchool{
+        width: 188px;
+        height: 230px;
+        top: -30px;
+        left: 30px;
+    }
+    .workflow-container {
+        position: absolute;
+        left: 380px;
+        top: 0;
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+    }
+    .workflow {
+        width: 70%;
+        height: auto;
+    }
+   
+}
+
+* {
+    outline: 1px solid red;
 }
