@@ -1,4 +1,4 @@
-/* src/css/custom.css */
+/* Base styles (mobile first) */
 .main-menu_landingpage {
     display: flex;
     flex-direction: column;
@@ -129,9 +129,9 @@
   }
   
   
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     .main-menu_landingpage {
-      padding: 8px 16px; /* Adjust padding for larger screens */
+      padding: 8px 16px; 
     }
     .hamburger-menu-content {
       display: block;
@@ -179,16 +179,19 @@
     }
   }
   
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     .md-only {
       display: none; /* Hide hamburger on large devices */
     }
     .lg-only {
         display: flex; /* Show buttons on large devices */
         gap: 16px; /* Space between buttons */
+
     }
     .main-menu_landingpage {
-      padding: 8px 16px; /* Adjust padding for even larger screens */
+      margin: 0 80px;
+      margin-top: 24px;
+      margin-bottom: 32px;
     }
     .hamburger-menu-content {
       display: none; /* Hide the menu on even larger screens */
