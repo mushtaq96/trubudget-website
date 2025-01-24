@@ -1,0 +1,66 @@
+name: documentation
+
+on:
+  workflow_dispatch:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.5.2
+        with:
+          node-version: "18.x"
+      - name: Test Build
+        run: |
+          npm i
+          npm run build
+
+
+  audit:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    needs: [checks]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.5.2
+        with:
+          node-version: "18.x"
+      - name: Audit 
+        run: |
+            npm i
+            npm audit
+
+
+      
+  gh-release:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    needs: [checks]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2.5.2
+        with:
+          node-version: "18.x"
+      - uses: webfactory/ssh-agent@v0.5.0
+        with:
+          ssh-private-key: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+      
+      - name: rewrite links
+        run: |
+          node ./prepareRelease.js
+        
+      - name: Release to GitHub Pages
+        env:
+          USE_SSH: true
+          GIT_USER: git
+        run: |
+          git config --global user.email ${{ secrets.OPENKFWCI_GITHUB_EMAIL }}
+          git config --global user.name "openkfwCI"
+          npm i
+          npm run deploy

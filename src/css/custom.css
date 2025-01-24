@@ -1,0 +1,14 @@
+@import './navbar.css';
+@import './hero.css';
+@import './stickyAnchorBar.css';
+
+/* Define variables in :root */
+:root {
+    --primary-color: #3b82f6;
+    --hover-color: #2563eb;
+    --background-color: rgba(240, 240, 240, 0.3);
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}
+/* * {
+    outline: 1px solid red;
+} */
