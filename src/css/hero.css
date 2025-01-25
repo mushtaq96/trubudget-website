@@ -1,0 +1,288 @@
+/* Hero Section */
+.hero-section {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh; 
+    overflow: visible; /* Ensure content can overflow and scroll */
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 785px;
+    object-fit: cover; /* Ensure the background image covers the entire section */
+    z-index: -1; /* Place the background behind other content */
+}
+
+.hero-container {
+    position: relative;
+    margin-top: 6rem;
+    width: 100%;
+    height: 100%;
+}
+
+.primarySchool {
+    top: 46px;
+    left: -20px;
+    width: 100px;
+    height: auto;
+}
+
+.workflow-container {
+    position: absolute;
+    right: -30px;
+    top: 0;
+    max-width: 90%;
+    height: 135px;
+    overflow: hidden;
+}
+
+.topbar-container {
+    display: flex;
+    height: 8px;
+    width: 100%;
+    background-color: #787D8A;
+    border-radius: 2px 2px 0px 0px;
+}
+
+.topbar-ellipses {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-left: 5px;
+}
+.ellipse-1, .ellipse-2, .ellipse-3 {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #D9D9D9;
+}
+.topbar-rectange {
+    width: 150px;
+    height: 5px;
+    background-color: #D9D9D9;
+    margin-top: 1.25px;
+    margin-left: 50px;
+    border-radius: 1px;
+}
+
+.workflow {
+    width: 100%;
+    height: auto;
+}
+
+
+.hero-content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 12em;
+}
+
+.hero-title {
+    width: 100%;
+    max-width: 358px;
+    font-family: 'Clash Grotesk Display', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px; 
+    line-height: 100%;
+    color: #111826;
+}
+
+.hero-description {
+    width: 100%;
+    max-width: 358px;
+    font-family: 'Switzer', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px; 
+    line-height: 150%;
+    color: #111826;
+}
+
+.hero-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 24px;
+    gap: 6px;
+    width: 166px;
+    height: 40px;
+    background: #1744E5;
+    border-radius: 40px;
+    font-family: 'Clash Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-button .downward-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Converts the icon to white */
+}
+
+.hero-image {
+    position: absolute;
+    display: block;
+}
+
+.notifications-container {
+    position: absolute;
+    left: -80px;
+    top: 35em;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.notifications {
+    width: 100%;
+    height: auto;
+}
+
+.taskStatus{
+    display: none;
+}
+
+.primarySchoolStatus {
+    position: absolute;
+    top: 33em;
+    right: -20px;
+    width: 100px;
+}
+
+.budgetDistribution {
+    position: absolute;
+    top: 37em;
+    left: 280px;
+    width: 120px;
+}
+
+.custom-triangle-mask {
+    clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+}
+
+@media (min-width: 768px){
+    .main-menu_landingpage {
+        max-width: 100%; /* Ensure the navbar doesn’t overflow */
+        padding: 8px 16px; /* Adjust padding if needed */
+    }
+    .hero-content-container {
+        top: 15em;
+        margin-left: 5em;
+        margin-right: 5em;
+        width: auto;
+    }
+    
+    .hero-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .primarySchool{
+        width: 188px;
+        height: 230px;
+        top: 0px;
+        left: 30px;
+    }
+    .workflow-container {
+        position: absolute;
+        right: -50px;
+        top: 0;
+        width: 340px;
+        height: 200px;
+        overflow: hidden;
+    }
+    .workflow {
+        width: 100%;
+        height: 100%;
+    }
+    .primarySchoolStatus {
+        position: absolute;
+        top: 33em;
+        right: 0px;
+        width: 200px;
+        height: 220px;
+    }
+    .budgetDistribution {
+        position: absolute;
+        top: 37em;
+        left: 500px;
+        width: 200px;
+        height: 150px;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1024px){
+    .custom-triangle-mask {
+        clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
+    }
+    .hero-container {
+        margin-top: 8em;
+        left: 10%;
+        width: 80%;
+        height: 80%;
+    }
+    .hero-content-container {
+        top: 4em;
+        height: auto;
+        width: 50%;
+        left: 18%; 
+    }
+    .hero-title{
+        max-width: none;
+    }
+    .hero-description{
+        max-width: 100%;
+    }
+    .primarySchool{
+        top: 4em;
+        left: auto;
+    }
+    .workflow-container{
+        top: 3em;
+        left: 80%;
+
+    }
+    .notifications-container{
+        top: 24em;
+        left: -20%;
+        height: auto;
+        width: 50%;
+        overflow: visible;
+    }
+    .taskStatus{
+        display: block;
+        left: 35%;
+        top: 28em;
+        width: 20%;
+    }
+    .budgetDistribution{
+        top: 32em;
+        left: 55%;
+        height: auto;
+        width: 20%;
+    }
+    .primarySchoolStatus{
+        top: 16em;
+        left: 80%;
+        height: auto;    
+    }
+}
